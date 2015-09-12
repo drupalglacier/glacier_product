@@ -78,6 +78,52 @@ function glacier_product_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-product-field_order'
+  $field_instances['node-product-field_order'] = array(
+    'bundle' => 'product',
+    'default_value' => array(
+      0 => array(
+        'value' => 9999999,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_order',
+    'label' => 'Order',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'node-product-field_product_category'
   $field_instances['node-product-field_product_category'] = array(
     'bundle' => 'product',
@@ -194,52 +240,6 @@ function glacier_product_field_default_field_instances() {
       ),
       'type' => 'inline_entity_form',
       'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'node-product-field_order'
-  $field_instances['node-product-field_order'] = array(
-    'bundle' => 'product',
-    'default_value' => array(
-      0 => array(
-        'value' => 9999999,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_order',
-    'label' => 'Order',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 8,
     ),
   );
 
@@ -399,8 +399,8 @@ function glacier_product_field_default_field_instances() {
   t('Category');
   t('Description');
   t('Name');
-  t('Product variations');
   t('Order');
+  t('Product variations');
   t('Title');
 
   return $field_instances;

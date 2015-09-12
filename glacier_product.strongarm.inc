@@ -70,16 +70,16 @@ function glacier_product_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '7',
-        ),
-        'path' => array(
           'weight' => '5',
         ),
+        'path' => array(
+          'weight' => '3',
+        ),
         'rabbit_hole' => array(
-          'weight' => '4',
+          'weight' => '2',
         ),
         'xmlsitemap' => array(
-          'weight' => '6',
+          'weight' => '4',
         ),
       ),
       'display' => array(

@@ -25,8 +25,8 @@ function glacier_product_field_group_info() {
     'children' => array(
       0 => 'title_field',
       1 => 'body',
-      2 => 'field_product_variations',
-      3 => 'field_product_category',
+      2 => 'field_product_category',
+      3 => 'field_product_variations',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
